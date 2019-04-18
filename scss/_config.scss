@@ -28,3 +28,28 @@ $home-image: url(https://images.pexels.com/photos/943096/pexels-photo-943096.jpe
     }
   }
 }
+
+// Media Query Mixins
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media screen (min-width: 1171px) {
+    @content;
+  }
+}

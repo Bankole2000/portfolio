@@ -30,7 +30,6 @@
   position: fixed;
   top: 0;
   width: 100vw;
-  opacity: 0.9;
   visibility: hidden; }
   .menu.show {
     visibility: visible;
@@ -46,14 +45,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #1b1b1b;
+    background: rgba(27, 27, 27, 0.9);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.3s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #282828;
+    background: rgba(40, 40, 40, 0.9);
     transform: translate3d(0, 100%, 0);
     transition: all 0.3s ease-out; }
     .menu-branding.show {
@@ -70,7 +69,8 @@
     transform: translate3d(600px, 0, 0);
     transition: all 0.3s ease-out; }
     .menu .nav-item.show {
-      transform: translate3d(0, 0, 0); }
+      transform: translate3d(0, 0, 0);
+      transition: all 0.3s ease-out; }
     .menu .nav-item.current {
       border-bottom: solid 2px #ff9800; }
       .menu .nav-item.current a {
