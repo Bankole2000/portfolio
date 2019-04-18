@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Simple Responsive Personal Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive --usePolling"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bankole2000/portfolio.git"
+  },
+  "author": "Bankole Esan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bankole2000/portfolio/issues"
+  },
+  "homepage": "https://bankole2000.github.io/portfolio/",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
