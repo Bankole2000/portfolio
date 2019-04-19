@@ -9,12 +9,12 @@ body {
   @include background();
   background: $primary-color;
   color: #fff;
-  height: 100vh;
+  min-height: calc(100vh - 60px);
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
-
+ 
 // Headings
 h1,
 h2,
@@ -24,8 +24,8 @@ h3 {
 
   &.lg-heading {
     font-size: 4rem;
-  }
-  &.sm-heading {
+  } 
+  &.sm-heading { 
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(lighten($primary-color, 2), 0.5);

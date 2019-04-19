@@ -105,7 +105,7 @@
 body {
   background: #282828;
   color: #fff;
-  height: 100vh;
+  min-height: calc(100vh - 60px);
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
@@ -185,14 +185,16 @@ main {
     div.menu-branding.show {
       transform: translate3d(0, 0, 0); }
   .menu-nav {
-    height: 75vh;
+    height: 70vh;
     transform: translate3d(-100%, 0, 0);
     font-size: 24px; }
   .menu-branding {
-    height: 25vh;
+    height: 30vh;
     transform: translate3d(100%, 0, 0); } }
 
 @media screen and (max-width: 500px) {
+  .menu-nav {
+    font-size: 20px; }
   main {
     padding: 0; }
   main#home h1 {
