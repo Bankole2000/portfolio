@@ -29,7 +29,7 @@ h3 {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(lighten($primary-color, 2), 0.5);
-  }
+  } 
 }
 
 a {
@@ -75,6 +75,6 @@ main {
       margin-top: 20vh;
     }
   } 
-}
+} 
 
-@import "mobile";
+@import "mobile"; 
