@@ -60,7 +60,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url(https://i.imgur.com/apt5O1j.jpg);
+      background: url(../img/profile.jpg);
       background-size: cover;
       border-radius: 50%;
       border: solid 3px #ff9800;
@@ -159,9 +159,9 @@ main {
   min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
-    main .icons b a {
+    main .icons a {
       padding: 0.4rem; }
-      main .icons b a:hover {
+      main .icons a:hover {
         color: #ff9800;
         transition: all 0.3s ease-out; }
   main#home {
@@ -170,6 +170,7 @@ main {
       margin-top: 20vh; }
 
 .about-info {
+  padding-top: 20px;
   display: grid;
   grid-gap: 30px;
   grid-template-areas: "bioimage bio bio" "job1 job2 job3";
@@ -224,7 +225,10 @@ main {
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
       width: 120px;
-      height: 120px; } }
+      height: 120px; }
+  .about-info {
+    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
   .menu-nav {

@@ -59,7 +59,7 @@ main {
 
   .icons {
     margin-top: 1rem;
-    b a {
+    a {
       padding: 0.4rem;
 
       &:hover {
@@ -78,6 +78,7 @@ main {
 }
 
 .about-info {
+  padding-top: 20px;
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
