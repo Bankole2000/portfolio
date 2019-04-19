@@ -8,7 +8,7 @@
 body {
   @include background();
   background: $primary-color;
-  color: #fff;
+  color: set-text-color($primary-color);
   min-height: calc(100vh - 60px);
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -33,7 +33,7 @@ h3 {
 }
 
 a {
-  color: #fff;
+  color: set-text-color($primary-color);
   text-decoration: none;
 
   &:hover {
@@ -54,7 +54,7 @@ header {
 
 main {
   padding: 4rem;
-  height: 100vh;
+  height: 100vh; 
 
   .icons {
     margin-top: 1rem;
