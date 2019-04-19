@@ -1,10 +1,9 @@
 @import "config";
 @import "menu";
-@import "mobile";
 
 * {
   box-sizing: border-box;
-}
+} 
 
 body {
   @include background();
@@ -75,5 +74,7 @@ main {
     h1 {
       margin-top: 20vh;
     }
-  }
+  } 
 }
+
+@import "mobile";

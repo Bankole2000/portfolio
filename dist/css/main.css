@@ -69,8 +69,7 @@
     transform: translate3d(600px, 0, 0);
     transition: all 0.3s ease-out; }
     .menu .nav-item.show {
-      transform: translate3d(0, 0, 0);
-      transition: all 0.3s ease-out; }
+      transform: translate3d(0, 0, 0); }
     .menu .nav-item.current {
       border-bottom: solid 2px #ff9800; }
       .menu .nav-item.current a {
@@ -168,3 +167,15 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 5vh; } }
