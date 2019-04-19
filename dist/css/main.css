@@ -105,7 +105,7 @@
 body {
   background: #282828;
   color: #fff;
-  min-height: calc(100vh - 60px);
+  min-height: calc(100% - 60px);
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
@@ -118,7 +118,7 @@ body {
       top: 0;
       right: 0;
       width: 100vw;
-      height: 100vh;
+      height: 100%;
       z-index: -1;
       background: rgba(40, 40, 40, 0.6); }
 
@@ -155,18 +155,48 @@ header {
 
 main {
   padding: 4rem;
-  height: 100vh; }
+  height: 100%;
+  min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
-    main .icons a {
+    main .icons b a {
       padding: 0.4rem; }
-      main .icons a:hover {
+      main .icons b a:hover {
         color: #ff9800;
         transition: all 0.3s ease-out; }
   main#home {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr); }
+  .about-info .bio-img {
+    grid-area: bioimage;
+    margin: auto; }
+  .about-info .bio {
+    grid-area: bio;
+    font-size: 1.5rem; }
+  .about-info .job-1 {
+    grid-area: job1; }
+  .about-info .job-2 {
+    grid-area: job2; }
+  .about-info .job-3 {
+    grid-area: job3; }
+  .about-info .job {
+    background: #353535;
+    padding: 0.7rem;
+    border-bottom: #ff9800 5px solid; }
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #0f0f0f;
+  color: #fff;
+  height: 60px; }
 
 @media screen and (max-width: 768px) {
   main {

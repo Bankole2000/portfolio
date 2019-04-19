@@ -4,7 +4,7 @@ const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".menu-nav");
 const menuBranding = document.querySelector(".menu-branding");
 const navItems = document.querySelectorAll(".nav-item");
-
+const copyRight = document.querySelector("#year");
 //Set Initial State of the menu
 let showMenu = false;
 menuBtn.addEventListener("click", toggleMenu);
@@ -30,3 +30,8 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+// Keep Footer Year Updated
+
+let today = new Date();
+copyRight.innerHTML = `${today.getFullYear()}`;

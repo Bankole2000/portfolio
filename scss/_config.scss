@@ -21,7 +21,7 @@ $home-image: url(https://images.pexels.com/photos/943096/pexels-photo-943096.jpe
         top: 0;
         right: 0;
         width: 100vw;
-        height: 100vh;
+        height: 100%;
         z-index: -1;
         background: rgba($primary-color, $background-opacity);
       }
@@ -34,7 +34,7 @@ $home-image: url(https://images.pexels.com/photos/943096/pexels-photo-943096.jpe
   @if (lightness($color) > 40) {
     @return #000;
   } @else {
-    @return #fff; 
+    @return #fff;
   }
 }
 
