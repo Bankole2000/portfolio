@@ -4,7 +4,8 @@
   "description": "Simple Responsive Personal Portfolio",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive --usePolling"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive --usePolling",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
