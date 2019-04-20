@@ -24,6 +24,23 @@ h3 {
 
   &.lg-heading {
     font-size: 4rem;
+    z-index: 1;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 9rem;
+      right: 5vw;
+      width: 90vw;
+      height: 5px;
+      z-index: 0;
+      background: $secondary-color;
+    }
+
+    &#lg-home {
+      &:after {
+        top: 18rem;
+      }
+    }
   }
   &.sm-heading {
     margin-bottom: 2rem;
@@ -89,6 +106,7 @@ main {
   .bio-img {
     grid-area: bioimage;
     margin: auto;
+    border: $secondary-color 3px solid;
   }
 
   .bio {
@@ -115,12 +133,59 @@ main {
   }
 }
 
-#main-footer {
+// Work and Projects
+.projects {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  img {
+    width: 100%;
+    border: 3px #fff solid;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include ease-out();
+    }
+  }
+}
+
+// Button Styles
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+
+  &:hover {
+    background: $secondary-color;
+    color: set-text_color($primary-color);
+  }
+}
+
+.btn-dark {
+  @extend .btn;
+  background: darken($primary-color, 50);
+  color: #fff;
+}
+
+.btn-light {
+  @extend .btn;
+  background: lighten($primary-color, 50);
+  color: #fff;
+}
+
+footer {
   text-align: center;
   padding: 1rem;
-  background: darken($primary-color, 10);
+  background: none;
   color: set-text-color($primary-color);
   height: 60px;
+
+  &#main-footer {
+    background: darken($primary-color, 10);
+  }
 }
 
 @import "mobile";

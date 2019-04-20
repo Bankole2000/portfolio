@@ -130,7 +130,23 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 4rem; }
+    font-size: 4rem;
+    z-index: 1; }
+    h1.lg-heading:after,
+    h2.lg-heading:after,
+    h3.lg-heading:after {
+      content: "";
+      position: absolute;
+      top: 9rem;
+      right: 5vw;
+      width: 90vw;
+      height: 5px;
+      z-index: 0;
+      background: #ff9800; }
+    h1.lg-heading#lg-home:after,
+    h2.lg-heading#lg-home:after,
+    h3.lg-heading#lg-home:after {
+      top: 18rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
@@ -177,7 +193,8 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-img {
     grid-area: bioimage;
-    margin: auto; }
+    margin: auto;
+    border: #ff9800 3px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -192,12 +209,51 @@ main {
     padding: 0.7rem;
     border-bottom: #ff9800 5px solid; }
 
-#main-footer {
+.projects {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr); }
+  .projects img {
+    width: 100%;
+    border: 3px #fff solid; }
+    .projects img:hover {
+      opacity: 0.5;
+      border-color: #ff9800;
+      transition: all 0.3s ease-out; }
+
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: #ff9800;
+    color: #fff; }
+
+.btn-dark {
+  background: black;
+  color: #fff; }
+
+.btn-light {
+  background: #a8a8a8;
+  color: #fff; }
+
+footer {
   text-align: center;
   padding: 1rem;
-  background: #0f0f0f;
+  background: none;
   color: #fff;
   height: 60px; }
+  footer#main-footer {
+    background: #0f0f0f; }
+
+@media screen and (min-width: 1171px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -228,13 +284,19 @@ main {
       height: 120px; }
   .about-info {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .projects {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
   .menu-nav {
     font-size: 20px; }
   main {
-    padding: 0; }
+    padding: 4rem 1rem 1rem 1rem; }
   main#home h1 {
     margin-top: 15vh;
-    font-size: 3rem; } }
+    font-size: 3rem; }
+    main#home h1#lg-home:after {
+      top: 14rem; }
+  .projects {
+    grid-template-columns: 1fr; } }

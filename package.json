@@ -17,6 +17,7 @@
   },
   "homepage": "https://bankole2000.github.io/portfolio/",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0"
   }
 }
