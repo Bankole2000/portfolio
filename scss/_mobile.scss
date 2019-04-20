@@ -3,11 +3,17 @@
   .projects {
     grid-template-columns: repeat(4, 1fr);
   }
+  .videos {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 // Desktops and Laptops
 @include mediaLg {
   .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .videos {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -66,6 +72,15 @@
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .videos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .underline,
+  .lg-underline {
+    margin: auto;
+  }
 }
 
 // Smartphones
@@ -85,6 +100,7 @@
     &#lg-home {
       &:after {
         top: 14rem;
+        display: none;
       }
     }
   }

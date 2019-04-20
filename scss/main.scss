@@ -34,6 +34,7 @@ h3 {
       height: 5px;
       z-index: 0;
       background: $secondary-color;
+      display: none;
     }
 
     &#lg-home {
@@ -130,7 +131,28 @@ main {
     background: lighten($primary-color, 5);
     padding: 0.7rem;
     border-bottom: $secondary-color 5px solid;
+
+    h6 {
+      margin-top: 0.7rem;
+      margin-bottom: 0.7rem;
+    }
+
+    .secondary-text {
+      color: $secondary-color;
+    }
   }
+}
+
+.underline {
+  width: 60%;
+  height: 3px;
+  background-color: $secondary-color;
+}
+
+.lg-underline {
+  width: 90%;
+  height: 5px;
+  background-color: $secondary-color;
 }
 
 // Work and Projects
@@ -149,6 +171,12 @@ main {
       @include ease-out();
     }
   }
+}
+
+.videos {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat (3, 1fr);
 }
 
 // Button Styles
