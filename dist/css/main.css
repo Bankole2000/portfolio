@@ -111,14 +111,17 @@ body {
   line-height: 1.5; }
   body#bg-img {
     background: url(https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
       content: "";
       position: absolute;
       top: 0;
       right: 0;
-      width: 100vw;
-      height: 100%;
+      bottom: 0;
+      left: 0;
+      overflow: hidden;
+      height: inherit;
       z-index: -1;
       background: rgba(40, 40, 40, 0.6); }
 
@@ -233,7 +236,7 @@ main {
     width: 100%;
     border: 3px #fff solid; }
     .projects img:hover {
-      opacity: 0.5;
+      opacity: 0.8;
       border-color: #ff9800;
       transition: all 0.3s ease-out; }
 
@@ -241,6 +244,34 @@ main {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat 2, 1fr; }
+  .videos .vid-item {
+    padding: 1rem 2rem; }
+    .videos .vid-item .vid-label {
+      background: rgba(15, 15, 15, 0.8);
+      padding: 0.2rem 1rem; }
+      .videos .vid-item .vid-label .secondary-text {
+        color: #ff9800; }
+    .videos .vid-item:nth-child(6) {
+      display: none; }
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .contact-info div {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.3s ease-out; }
+    .contact-info div:hover {
+      padding: 1.5rem 2rem;
+      background: #ff9800;
+      color: #000; }
+      .contact-info div:hover span {
+        color: #000; }
 
 .btn, .btn-dark, .btn-light, .btn-disabled {
   display: block;
@@ -341,4 +372,27 @@ footer {
   .projects {
     grid-template-columns: 1fr; }
   .videos {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+    .videos .vid-item {
+      padding: 1rem 0.5rem; }
+      .videos .vid-item .vid-label {
+        background: rgba(45, 45, 45, 0.5);
+        padding: 0.2rem 0.3rem; }
+  .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem; }
+    .contact-info div {
+      font-size: 1rem;
+      border: 3px #fff solid;
+      padding: 0.5rem 0.5rem;
+      margin-bottom: 3rem;
+      transition: all 0.3s ease-out; }
+      .contact-info div:hover {
+        padding: 1.5rem 2rem;
+        background: #ff9800;
+        color: #000; }
+        .contact-info div:hover span {
+          color: #000; } }

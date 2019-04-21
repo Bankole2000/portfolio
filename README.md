@@ -1,6 +1,9 @@
 # Simple Responsive Portfolio
 
+A simple website that I'm using as my portfolio for now. Built with `node-sass html 5 css 3` and a little `javascript`
+
 ## Issues
+
 1. **Node sass error**
 
 Compiling `.scss` files with `node-sass` using the following script in `package.json`
@@ -25,16 +28,20 @@ To fix this, I used a solution I found [here](https://github.com/michaelwayman/n
 
 2. **Overriding CSS**
 
-while coding the responsiveness (using media queries defined in the `_config` and `_mobile` partials),  the css began to overide each other, with css on earlier lines being overridden by css in later lines (something i learnt from jen Simmons) like so => 
+while coding the responsiveness (using media queries defined in the `_config` and `_mobile` partials), the css began to overide each other, with css on earlier lines being overridden by css in later lines (something i learnt from jen Simmons) like so =>
+
 ```css
-main#home h1 { // @media small screens
-    margin-top: 5vh;
+main#home h1 {
+  // @media small screens
+  margin-top: 5vh;
 }
-main#home h1 { // @media larger screens
-    margin-top: 20vh;
+main#home h1 {
+  // @media larger screens
+  margin-top: 20vh;
 }
 ```
-So earlier occuring css is overriden in the browser like this => 
+
+So earlier occuring css is overriden in the browser like this =>
 ~~main#home h1 {
-    margin-top: 5vh;
+margin-top: 5vh;
 }~~ while later css is implemented. Thus to ensure that responsive css is applied by the browser, I imported the `_mobile.scss` file last in the `main.scss` file

@@ -166,7 +166,7 @@ main {
     border: 3px #fff solid;
 
     &:hover {
-      opacity: 0.5;
+      opacity: 0.8;
       border-color: $secondary-color;
       @include ease-out();
     }
@@ -177,6 +177,48 @@ main {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat (2, 1fr);
+
+  .vid-item {
+    padding: 1rem 2rem;
+
+    .vid-label {
+      background: rgba(darken($primary-color, 10), 0.8);
+      padding: 0.2rem 1rem;
+      .secondary-text {
+        color: $secondary-color;
+      }
+    }
+
+    &:nth-child(6) {
+      display: none;
+    }
+  }
+}
+
+// Contact Page Style
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+
+  div {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 3rem;
+    @include ease-out();
+
+    &:hover {
+      padding: 1.5rem 2rem;
+      background: $secondary-color;
+      color: set-text-color($secondary-color);
+      span {
+        color: set-text-color($secondary-color);
+      }
+    }
+  }
 }
 
 // Button Styles
