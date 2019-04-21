@@ -176,7 +176,7 @@ main {
 .videos {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: repeat (3, 1fr);
+  grid-template-columns: repeat (2, 1fr);
 }
 
 // Button Styles
@@ -202,6 +202,20 @@ main {
   @extend .btn;
   background: lighten($primary-color, 50);
   color: #fff;
+}
+
+.btn-disabled {
+  @extend .btn;
+  opacity: 0.4;
+  color: #888;
+}
+
+.gap {
+  height: 20px;
+
+  &-top {
+    height: 3rem;
+  }
 }
 
 footer {

@@ -240,14 +240,14 @@ main {
 .videos {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: repeat 3, 1fr; }
+  grid-template-columns: repeat 2, 1fr; }
 
-.btn, .btn-dark, .btn-light {
+.btn, .btn-dark, .btn-light, .btn-disabled {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem; }
-  .btn:hover, .btn-dark:hover, .btn-light:hover {
+  .btn:hover, .btn-dark:hover, .btn-light:hover, .btn-disabled:hover {
     background: #ff9800;
     color: #fff; }
 
@@ -258,6 +258,15 @@ main {
 .btn-light {
   background: #a8a8a8;
   color: #fff; }
+
+.btn-disabled {
+  opacity: 0.4;
+  color: #888; }
+
+.gap {
+  height: 20px; }
+  .gap-top {
+    height: 3rem; }
 
 footer {
   text-align: center;
@@ -272,13 +281,13 @@ footer {
   .projects {
     grid-template-columns: repeat(4, 1fr); }
   .videos {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
     grid-template-columns: repeat(3, 1fr); }
   .videos {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -330,4 +339,6 @@ footer {
       top: 14rem;
       display: none; }
   .projects {
+    grid-template-columns: 1fr; }
+  .videos {
     grid-template-columns: 1fr; } }
