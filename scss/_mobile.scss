@@ -23,6 +23,7 @@
   main {
     align-items: center;
     text-align: center;
+    padding: 3rem;
 
     &.lg-heading {
       line-height: 1;
@@ -75,11 +76,30 @@
 
   .videos {
     grid-template-columns: repeat(2, 1fr);
+
+    .vid-item {
+      padding: 0.2rem 0.2rem;
+    }
   }
 
   .underline,
   .lg-underline {
     margin: auto;
+  }
+
+  .testimonials {
+    grid-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr 2fr);
+
+    font-size: 0.8rem;
+
+    .testimony {
+      text-align: left;
+
+      &:nth-child(3) {
+        display: none;
+      }
+    }
   }
 }
 
@@ -113,7 +133,7 @@
     grid-template-columns: 1fr;
 
     .vid-item {
-      padding: 1rem 0.5rem;
+      padding: 0.5rem 0.5rem;
 
       .vid-label {
         background: rgba(lighten($primary-color, 2), 0.5);
@@ -144,6 +164,25 @@
         span {
           color: set-text-color($secondary-color);
         }
+      }
+    }
+  }
+
+  .testimonials {
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+
+    font-size: 0.8rem;
+
+    img {
+      width: 50%;
+    }
+
+    .testimony {
+      text-align: center;
+
+      &:nth-child(3) {
+        display: none;
       }
     }
   }
