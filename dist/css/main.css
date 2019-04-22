@@ -111,7 +111,6 @@ body {
   line-height: 1.5; }
   body#bg-img {
     background: url(https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-    background-attachment: fixed;
     background-size: cover; }
 
 .trans {

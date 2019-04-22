@@ -12,7 +12,7 @@ $home-image: url(https://images.pexels.com/photos/943096/pexels-photo-943096.jpe
   @if $show-home-image {
     &#bg-img {
       background: $home-image;
-      background-attachment: fixed;
+      // background-attachment: fixed;
       background-size: cover;
 
       // &:after {
