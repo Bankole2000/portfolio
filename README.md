@@ -1,6 +1,8 @@
-# Simple Responsive Portfolio
+# First Portfolio Website
 
-A simple website that I'm using as my portfolio for now. Built with `node-sass html 5 css 3` and a little `javascript`
+A simple website that I'm using as my portfolio for the time being.
+
+My very first Portfolio website... (Kept thinking to myself _"how the/why the hell haven't I built one all these years?_ o.O" - well no I have, lol ). Built with `node-sass html 5 css 3` and a little `javascript ES6`.
 
 ## Issues
 
