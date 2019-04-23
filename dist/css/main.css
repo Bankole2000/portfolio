@@ -418,5 +418,7 @@ footer {
       width: 50%; }
     .testimonials .testimony {
       text-align: center; }
-      .testimonials .testimony:nth-child(3) {
-        display: none; } }
+      .testimonials .testimony h3 {
+        font-size: 1.3rem; }
+      .testimonials .testimony p {
+        font-size: 1rem; } }
