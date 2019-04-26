@@ -142,6 +142,16 @@
     }
   }
 
+  .overview {
+    grid-template-columns: 1fr;
+
+    .LI-footer {
+      text-align: left !important;
+      // width: 100%;
+      // align-items: left !important;
+    }
+  }
+
   // Contact Page Style
   .contact-info {
     display: flex;

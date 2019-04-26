@@ -110,7 +110,7 @@ main {
     width: 100%;
     border: 2px solid $secondary-color;
   }
- 
+
   p {
     margin-top: 0;
   }
@@ -176,6 +176,11 @@ main {
   background-color: $secondary-color;
 }
 
+.overview {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: 3fr 7fr;
+}
 // Work and Projects
 .projects {
   display: grid;

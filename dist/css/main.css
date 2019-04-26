@@ -231,6 +231,11 @@ main {
   height: 5px;
   background-color: #ff9800; }
 
+.overview {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: 3fr 7fr; }
+
 .projects {
   display: grid;
   grid-gap: 1rem;
@@ -392,6 +397,10 @@ footer {
       .videos .vid-item .vid-label {
         background: rgba(45, 45, 45, 0.5);
         padding: 0.2rem 0.3rem; }
+  .overview {
+    grid-template-columns: 1fr; }
+    .overview .LI-footer {
+      text-align: left !important; }
   .contact-info {
     display: flex;
     flex-wrap: wrap;
