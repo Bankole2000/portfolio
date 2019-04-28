@@ -2,7 +2,43 @@
 
 A simple website that I'm using as my portfolio for the time being.
 
+[![Practice](https://img.shields.io/badge/Practice-JavaScript-yellow.svg)](https://bankole2000.github.io/githubfinder)
+
+_<p align="center">"I continue to push on... Longing to Master the Ways of the Front End Jedi"</p>_
+
+<div align="center" style="text-align:center; margin:auto;">
+<img align="center" src="https://i.imgur.com/SeUttrI.png" width="150"/>
+</div>
+
 My very first Portfolio website... (Kept thinking to myself _"how the/why the hell haven't I built one all these years?_ o.O" - well no I have, lol ). Built with `node-sass html 5 css 3` and a little `javascript ES6`.
+
+## What it is
+
+A simple, reponsive portfolio website. Built with:
+
+- HTML
+- CSS
+- Vanilla JS - ES6
+- [Node Sass](http://www.bootswatch.com/) - A Bootstrap based CSS Theming tool
+- [Patience](https://www.wikihow.com/Love-Programming) - Strictly for the love of coding _Mehn!_
+
+## What it does
+
+- Display Projects
+- Try to look pretty, simple and hopefully not too formal.
+- Inform visitors about me
+- Links to All the things
+- Link Back to project Repos and Home Pages (if available)
+
+## Learning Points
+
+- Sass Mixins
+- Sass functions
+- Responsive design & media queries
+- CSS Grid
+- Flexbox
+- CSS Animations/transitions
+- Psuedo Elements
 
 ## Issues
 
@@ -47,3 +83,12 @@ So earlier occuring css is overriden in the browser like this =>
 ~~main#home h1 {
 margin-top: 5vh;
 }~~ while later css is implemented. Thus to ensure that responsive css is applied by the browser, I imported the `_mobile.scss` file last in the `main.scss` file
+
+## Acknowledgments
+
+- Many thanks to [@bradtraversy](https://github.com/bradtraversy) for his awesome courses - _i will not fail you sensei_
+- Thanks to [@torvalds](https://github.com/torvalds) For Making the world a better place
+- And To anyone reading this... _You're awesome!_
+
+That being said
+_<p align="center">Adieu, Till I push again... I must return to my meditations on the Ways of JS Ninjustu</p>_
