@@ -2,15 +2,15 @@
 
 A simple website that I'm using as my portfolio for the time being.
 
-[![Practice](https://img.shields.io/badge/Practice-JavaScript-yellow.svg)](https://bankole2000.github.io/githubfinder)
+[![Project](https://img.shields.io/badge/Project-Portfolio-orange.svg)](https://bankole2000.github.io/githubfinder)
 
-_<p align="center">"I continue to push on... Longing to Master the Ways of the Front End Jedi"</p>_
+_<p align="center">"Alexander Hamilton... my name is Alexander Hamilton... There's a million things I haven't done... but just you wait... just you wait..."</p>_
 
 <div align="center" style="text-align:center; margin:auto;">
-<img align="center" src="https://i.imgur.com/SeUttrI.png" width="150"/>
+<img align="center" src="https://i.imgur.com/VAy4MSS.png" width="150"/>
 </div>
 
-My very first Portfolio website... (Kept thinking to myself _"how the/why the hell haven't I built one all these years?_ o.O" - well no I have, lol ). Built with `node-sass html 5 css 3` and a little `javascript ES6`.
+My very first Portfolio website... (Kept thinking to myself _"how/why the hell haven't I built one all these years?_ o.O" - well now I have, lol ). Built with `node-sass html 5 css 3` and a little `javascript ES6`.
 
 ## What it is
 
@@ -19,13 +19,13 @@ A simple, reponsive portfolio website. Built with:
 - HTML
 - CSS
 - Vanilla JS - ES6
-- [Node Sass](http://www.bootswatch.com/) - A Bootstrap based CSS Theming tool
+- Node Sass
 - [Patience](https://www.wikihow.com/Love-Programming) - Strictly for the love of coding _Mehn!_
 
 ## What it does
 
 - Display Projects
-- Try to look pretty, simple and hopefully not too formal.
+- Try to look pretty, simple, and hopefully not too formal.
 - Inform visitors about me
 - Links to All the things
 - Link Back to project Repos and Home Pages (if available)
@@ -90,5 +90,4 @@ margin-top: 5vh;
 - Thanks to [@torvalds](https://github.com/torvalds) For Making the world a better place
 - And To anyone reading this... _You're awesome!_
 
-That being said
-_<p align="center">Adieu, Till I push again... I must return to my meditations on the Ways of JS Ninjustu</p>_
+_<p align="center">And remember from here on end... History has it's eyes on you...</p>_
