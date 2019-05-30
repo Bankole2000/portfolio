@@ -112,9 +112,21 @@ body {
   body#bg-img {
     background: url(https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-size: cover; }
+<<<<<<< HEAD
+    body#bg-img:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100vw;
+      height: 100%;
+      z-index: -1;
+      background: rgba(40, 40, 40, 0.6); }
+=======
 
 .trans {
   background: rgba(40, 40, 40, 0.4); }
+>>>>>>> gh-pages
 
 h1,
 h2,
@@ -136,8 +148,12 @@ h3 {
       width: 90vw;
       height: 5px;
       z-index: 0;
+<<<<<<< HEAD
+      background: #ff9800; }
+=======
       background: #ff9800;
       display: none; }
+>>>>>>> gh-pages
     h1.lg-heading#lg-home:after,
     h2.lg-heading#lg-home:after,
     h3.lg-heading#lg-home:after {
@@ -180,6 +196,8 @@ main {
     main#home h1 {
       margin-top: 20vh; }
 
+<<<<<<< HEAD
+=======
 .testimonials {
   display: grid;
   grid-gap: 2rem;
@@ -192,6 +210,7 @@ main {
   .testimonials p {
     margin-top: 0; }
 
+>>>>>>> gh-pages
 .about-info {
   padding-top: 20px;
   display: grid;
@@ -215,6 +234,8 @@ main {
     background: #353535;
     padding: 0.7rem;
     border-bottom: #ff9800 5px solid; }
+<<<<<<< HEAD
+=======
     .about-info .job h6 {
       margin-top: 0.7rem;
       margin-bottom: 0.7rem; }
@@ -235,6 +256,7 @@ main {
   display: grid;
   grid-gap: 24px;
   grid-template-columns: 3fr 7fr; }
+>>>>>>> gh-pages
 
 .projects {
   display: grid;
@@ -244,6 +266,13 @@ main {
     width: 100%;
     border: 3px #fff solid; }
     .projects img:hover {
+<<<<<<< HEAD
+      opacity: 0.5;
+      border-color: #ff9800;
+      transition: all 0.3s ease-out; }
+
+.btn, .btn-dark, .btn-light {
+=======
       opacity: 0.8;
       border-color: #ff9800;
       transition: all 0.3s ease-out; }
@@ -282,19 +311,31 @@ main {
         color: #000; }
 
 .btn, .btn-dark, .btn-light, .btn-disabled {
+>>>>>>> gh-pages
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem; }
+<<<<<<< HEAD
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: #ff9800;
+    color: #fff; }
+=======
   .btn:hover, .btn-dark:hover, .btn-light:hover, .btn-disabled:hover {
     background: #ff9800;
     color: #000; }
+>>>>>>> gh-pages
 
 .btn-dark {
   background: black;
   color: #fff; }
 
 .btn-light {
+<<<<<<< HEAD
+  background: #a8a8a8;
+  color: #fff; }
+
+=======
   background: #757575;
   color: #fff; }
 
@@ -307,6 +348,7 @@ main {
   .gap-top {
     height: 3rem; }
 
+>>>>>>> gh-pages
 footer {
   text-align: center;
   padding: 1rem;
@@ -318,6 +360,13 @@ footer {
 
 @media screen and (min-width: 1171px) {
   .projects {
+<<<<<<< HEAD
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr); } }
+=======
     grid-template-columns: repeat(4, 1fr); }
   .videos {
     grid-template-columns: repeat(2, 1fr); } }
@@ -327,12 +376,17 @@ footer {
     grid-template-columns: repeat(3, 1fr); }
   .videos {
     grid-template-columns: repeat(2, 1fr); } }
+>>>>>>> gh-pages
 
 @media screen and (max-width: 768px) {
   main {
     align-items: center;
+<<<<<<< HEAD
+    text-align: center; }
+=======
     text-align: center;
     padding: 3rem; }
+>>>>>>> gh-pages
     main.lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
@@ -360,6 +414,9 @@ footer {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .projects {
+<<<<<<< HEAD
+    grid-template-columns: repeat(2, 1fr); } }
+=======
     grid-template-columns: repeat(2, 1fr); }
   .videos {
     grid-template-columns: repeat(2, 1fr); }
@@ -376,6 +433,7 @@ footer {
       text-align: left; }
       .testimonials .testimony:nth-child(3) {
         display: none; } }
+>>>>>>> gh-pages
 
 @media screen and (max-width: 500px) {
   .menu-nav {
@@ -386,6 +444,11 @@ footer {
     margin-top: 15vh;
     font-size: 3rem; }
     main#home h1#lg-home:after {
+<<<<<<< HEAD
+      top: 14rem; }
+  .projects {
+    grid-template-columns: 1fr; } }
+=======
       top: 14rem;
       display: none; }
   .projects {
@@ -431,3 +494,4 @@ footer {
         font-size: 1.3rem; }
       .testimonials .testimony p {
         font-size: 1rem; } }
+>>>>>>> gh-pages
