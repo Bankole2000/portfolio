@@ -1,7 +1,7 @@
 $primary-color: #282828;
 $secondary-color: #ff9800;
 $show-home-image: true;
-$background-opacity: 0.6;
+$background-opacity: 0.4;
 $home-image: url(https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 
 @mixin ease-out {
@@ -15,16 +15,19 @@ $home-image: url(https://images.pexels.com/photos/943096/pexels-photo-943096.jpe
       // background-attachment: fixed;
       background-size: cover;
 
-      &:after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100vw;
-        height: 100%;
-        z-index: -1;
-        background: rgba($primary-color, $background-opacity);
-      }
+      // &:after {
+      //   content: "";
+      //   position: absolute;
+
+      //   top: 0;
+      //   right: 0;
+      //   bottom: 0;
+      //   left: 0;
+      //   overflow: hidden;
+      //   height: inherit;
+      //   z-index: -1;
+      //   background: rgba($primary-color, $background-opacity);
+      // }
     }
   }
 }
