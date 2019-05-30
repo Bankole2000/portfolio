@@ -10,7 +10,7 @@ _<p align="center">"Alexander Hamilton... my name is Alexander Hamilton... There
 <img align="center" src="https://i.imgur.com/VAy4MSS.png" width="150"/>
 </div>
 
-My very first Portfolio website... (Kept thinking to myself _"how/why the hell haven't I built one all these years?_ o.O" - well now I have, lol ). Built with `node-sass html 5 css 3` and a little `javascript ES6`.
+My very first Portfolio website... (Kept thinking to myself _"how/why the hell haven't I built one all these years?_ o.O" - well now I have, lol ). Built with `node-sass html5 css3` and a little `javascript ES6`.
 
 ## What it is
 
