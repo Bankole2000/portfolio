@@ -60,7 +60,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url(../img/profile.jpg);
+      background: url(../img/profile.jpg.webp);
       background-size: cover;
       border-radius: 50%;
       border: solid 3px #ff9800;
@@ -110,7 +110,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background: url(../img/background.jpeg.webp);
     background-size: cover; }
 
 .trans {
@@ -196,7 +196,8 @@ main {
   padding-top: 20px;
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-areas: "bioimage bio bio"
+ "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-img {
     grid-area: bioimage;
@@ -357,7 +358,11 @@ footer {
       width: 120px;
       height: 120px; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-areas: "bioimage"
+ "bio"
+ "job1"
+ "job2"
+ "job3";
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); }
