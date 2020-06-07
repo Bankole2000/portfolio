@@ -1,5 +1,5 @@
-@import "config";
-@import "menu";
+@import 'config';
+@import 'menu';
 
 * {
   box-sizing: border-box;
@@ -11,8 +11,20 @@ body {
   color: set-text-color($primary-color);
   min-height: calc(100% - 60px);
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
+}
+
+body::-webkit-scrollbar {
+  width: 2rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: $primary-color;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: $secondary-color;
 }
 
 .trans {
@@ -30,7 +42,7 @@ h3 {
     font-size: 4rem;
     z-index: 1;
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       top: 9rem;
       right: 5vw;
@@ -121,8 +133,8 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
-    "bioimage bio bio"
-    "job1 job2 job3";
+    'bioimage bio bio'
+    'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr);
 
   .bio-img {
@@ -248,6 +260,23 @@ main {
 }
 
 // Button Styles
+.hlbtn {
+  padding: 0.5rem 12px;
+
+  vertical-align: top;
+  color: #fff;
+  background: $secondary-color;
+  border: none;
+  border-radius: 1px;
+  font-size: 1rem;
+  cursor: pointer;
+  &:hover {
+    color: $secondary-color;
+    background-color: #fff;
+    @include ease-out();
+  }
+}
+
 .btn {
   display: block;
   padding: 0.5rem 1rem;
@@ -298,4 +327,4 @@ footer {
   }
 }
 
-@import "mobile";
+@import 'mobile';
