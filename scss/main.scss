@@ -93,6 +93,9 @@ main {
 
   .icons {
     margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     a {
       padding: 0.4rem;
 
@@ -261,14 +264,14 @@ main {
 
 // Button Styles
 .hlbtn {
-  padding: 0.5rem 12px;
-
-  vertical-align: top;
+  padding: 0.5rem 20px;
+  height: 48px;
+  vertical-align: middle;
   color: #fff;
   background: $secondary-color;
   border: none;
   border-radius: 1px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
   &:hover {
     color: $secondary-color;
