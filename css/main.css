@@ -107,11 +107,20 @@ body {
   color: #fff;
   min-height: calc(100% - 60px);
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background: url("../img/background.jpeg.webp");
     background-size: cover; }
+
+body::-webkit-scrollbar {
+  width: 2rem; }
+
+body::-webkit-scrollbar-track {
+  background: #282828; }
+
+body::-webkit-scrollbar-thumb {
+  background: #ff9800; }
 
 .trans {
   background: rgba(40, 40, 40, 0.4); }
@@ -129,7 +138,7 @@ h3 {
     h1.lg-heading:after,
     h2.lg-heading:after,
     h3.lg-heading:after {
-      content: "";
+      content: '';
       position: absolute;
       top: 9rem;
       right: 5vw;
@@ -196,7 +205,7 @@ main {
   padding-top: 20px;
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-img {
     grid-area: bioimage;
@@ -281,6 +290,20 @@ main {
       .contact-info div:hover span {
         color: #000; }
 
+.hlbtn {
+  padding: 0.5rem 12px;
+  vertical-align: top;
+  color: #fff;
+  background: #ff9800;
+  border: none;
+  border-radius: 1px;
+  font-size: 1rem;
+  cursor: pointer; }
+  .hlbtn:hover {
+    color: #ff9800;
+    background-color: #fff;
+    transition: all 0.3s ease-out; }
+
 .btn, .btn-dark, .btn-light, .btn-disabled {
   display: block;
   padding: 0.5rem 1rem;
@@ -357,7 +380,7 @@ footer {
       width: 120px;
       height: 120px; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); }
@@ -382,6 +405,8 @@ footer {
     font-size: 20px; }
   main {
     padding: 4rem 1rem 1rem 1rem; }
+  .hlbtn {
+    margin-top: 20px; }
   main#home h1 {
     margin-top: 15vh;
     font-size: 3rem; }
